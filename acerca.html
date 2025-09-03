@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acerca de | Rincón del Sabor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdf6f0;
+      color: #4E3629;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      width: 250px;
+      background-color: #6F4F37;
+      padding: 20px;
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      display: block;
+      padding: 12px;
+      margin: 10px 0;
+      background-color: #8D6E63;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #5D4037;
+    }
+
+    main {
+      margin-left: 270px;
+      padding: 60px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+
+    .profile-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-image {
+      flex: 0 0 200px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-info h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .profile-info p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 40px 20px;
+      }
+
+      .profile-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-image {
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú lateral -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="recetas.html">Recetas</a>
+    <a href="acerca.html">Acerca de</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="formulario.html">Formulario</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    
+      <div class="profile-info">
+        <h1>Acerca de mí</h1>
+        <p>
+          ¡Hola! Soy un apasionado de la cocina que disfruta crear experiencias memorables a través de sabores caseros. En <strong>Rincón del Sabor</strong>, comparto recetas simples, llenas de amor, ideales para cualquier ocasión.
+        </p>
+        <p>
+          Me inspiran los aromas de una buena taza de café, las sobremesas con amigos y la calidez de una comida bien hecha. Este espacio es mi manera de compartir esa pasión contigo.
+        </p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
+<div class="profile-info">
+ 
