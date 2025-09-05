@@ -69,7 +69,7 @@
       height: 150px;
     }
 
-    button[type="submit"], .home-button {
+    button[type="submit"], .back-button, .home-button {
       background-color: #6F4F37;
       color: white;
       border: none;
@@ -85,12 +85,15 @@
       margin-top: 1rem;
     }
 
-    button[type="submit"]:hover, .home-button:hover {
+    button[type="submit"]:hover, .back-button:hover, .home-button:hover {
       background-color: #4E3629;
     }
 
-    .home-button {
-      margin-left: 1rem;
+    /* Estilo para los botones de regresar y menú principal */
+    .back-button, .home-button {
+      display: inline-block;
+      margin-top: 1rem;
+      text-align: center;
     }
 
     /* Efecto de enfoque en los campos */
@@ -109,7 +112,7 @@
       
       <!-- Pregunta sobre el correo -->
       <label for="email">Tu correo electrónico:</label>
-      <input type="email" id="email" name="email" required autocomplete="email">
+      <input type="email" id="email" name="email" required>
 
       <!-- Pregunta sobre la calificación -->
       <label for="rating">¿Cómo calificarías el restaurante?</label>
@@ -122,7 +125,7 @@
         <option value="5">5 Estrellas</option>
       </select>
 
-      <!-- Calidad de la comida -->
+      <!-- Pregunta sobre la calidad de la comida -->
       <label for="food_quality">¿Cómo calificarías la calidad de la comida?</label>
       <select id="food_quality" name="food_quality" required>
         <option value="" disabled selected>Selecciona una opción</option>
@@ -133,7 +136,7 @@
         <option value="5">Excelente</option>
       </select>
 
-      <!-- Atención del personal -->
+      <!-- Pregunta sobre la atención del personal -->
       <label for="service_quality">¿Cómo calificarías la atención del personal?</label>
       <select id="service_quality" name="service_quality" required>
         <option value="" disabled selected>Selecciona una opción</option>
@@ -144,18 +147,18 @@
         <option value="5">Excelente</option>
       </select>
 
-      <!-- Ambiente del restaurante -->
+      <!-- Pregunta sobre el ambiente -->
       <label for="atmosphere">¿Cómo calificarías el ambiente del restaurante?</label>
       <select id="atmosphere" name="atmosphere" required>
         <option value="" disabled selected>Selecciona una opción</option>
-        <option value="1">Muy malo</option>
-        <option value="2">Malo</option>
+        <option value="1">Muy mala</option>
+        <option value="2">Mala</option>
         <option value="3">Regular</option>
-        <option value="4">Bueno</option>
+        <option value="4">Buena</option>
         <option value="5">Excelente</option>
       </select>
 
-      <!-- Recomendación -->
+      <!-- Pregunta sobre si recomendarían el restaurante -->
       <label for="recommend">¿Recomendarías este restaurante?</label>
       <select id="recommend" name="recommend" required>
         <option value="" disabled selected>Selecciona una opción</option>
@@ -163,19 +166,20 @@
         <option value="no">No</option>
       </select>
 
-      <!-- Opinión general -->
+      <!-- Pregunta sobre la experiencia general -->
       <label for="message">¿Qué te gustó o no te gustó del restaurante?</label>
       <textarea id="message" name="message" required></textarea>
 
+      <!-- Botón de regresar -->
+      <a href="javascript:history.back()" class="back-button">Regresar</a>
+
+      <!-- Botón de ir a la página principal (index.html.html) -->
+      <a href="inicio.html" class="home-button">Ir a la Página Principal</a>
+
       <!-- Botón de envío -->
       <button type="submit">Enviar</button>
-
-      <!-- Botón de ir a la página principal -->
-      <a href="inicio.html" class="home-button" role="button" aria-label="Volver a la página principal">Ir a la Página Principal</a>
     </form>
   </div>
 
 </body>
 </html>
-
-
